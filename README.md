@@ -1,4 +1,3 @@
-# Bot-Telegram-AI
 
 # 🤖 Telegram AI Bot - "Echo"
 
