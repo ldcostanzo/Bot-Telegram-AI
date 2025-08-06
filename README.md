@@ -32,10 +32,15 @@ git clone https://github.com/ldcostanzo/Bot-Telegram-AI.git
 cd Bot-Telegram-AI
 ```
 2. **Create a virtual environment in VS Code**
+Linux
 ```bash
 python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-
+source venv/bin/activate
+```
+Windows:
+```bash
+python -m venv venv
+venv\Scripts\activate
 ```
 
 3.**Install dependencies**
