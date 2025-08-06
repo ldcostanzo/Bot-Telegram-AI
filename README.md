@@ -31,6 +31,7 @@ An intelligent Telegram bot that uses [LangChain](https://www.langchain.com/), [
 git clone https://github.com/ldcostanzo/Bot-Telegram-AI.git
 cd Bot-Telegram-AI
 ```
+
 2. **Create a virtual environment in VS Code**
 
 Linux
@@ -44,11 +45,14 @@ python -m venv venv
 venv\Scripts\activate
 ```
 
+
 3.**Install dependencies**
 ```bash
 pip install -r requirements.txt
 
 ```
+
+
 4.**Rename the .env_example file to .env**
 ```bash
 BOT_TOKEN=your_telegram_bot_token
@@ -56,6 +60,8 @@ GROQ_API_KEY=your_groq_api_key
 TAVILY_API_KEY=your_tavily_api_key  # optional, if using TavilySearchResults
 
 ```
+
+
 5. **Run the bot**
 ```bash
 python main.py
