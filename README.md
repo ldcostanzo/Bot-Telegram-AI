@@ -1,33 +1,57 @@
-
 # 🤖 Telegram AI Bot - "Echo"
 
-Un bot Telegram intelligente che utilizza [LangChain](https://www.langchain.com/), [Groq](https://groq.com/), [LangGraph](https://github.com/langchain-ai/langgraph), e [Tavily](https://www.tavily.com/) per rispondere ai messaggi in modo efficace e step-by-step.
+An intelligent Telegram bot that uses [LangChain](https://www.langchain.com/), [Groq](https://groq.com/), [LangGraph](https://github.com/langchain-ai/langgraph), and [Tavily](https://www.tavily.com/) to respond to messages effectively and step-by-step.
 
 ---
 
-## 🚀 Funzionalità
+## 🚀 Features
 
-- Usa **Groq + LLaMA 3.3-70B** come modello LLM.
-- Si comporta come un assistente chiamato *Echo*, pensato per essere **sintetico, utile e ragionare passo dopo passo**.
-- Può fare **ricerche web** grazie a Tavily.
-- Interazione diretta via **Telegram Bot API**.
-- Costruito usando il framework **LangChain + LangGraph**.
+- Uses **Groq + LLaMA 3.3-70B** as the LLM.
+- Acts as an assistant called *Echo*, designed to be **concise, helpful, and always think step-by-step**.
+- Can perform **web searches** thanks to Tavily.
+- Direct interaction via the **Telegram Bot API**.
+- Built with **LangChain + LangGraph**.
 
 ---
 
-## 📦 Requisiti
+## 📦 Requirements
 
 - Python 3.10+
-- Una chiave API Groq
-- Una chiave API Tavily (opzionale, ma consigliata)
-- Un bot Telegram (creato tramite [@BotFather](https://t.me/BotFather))
+- A Groq API key
+- A Tavily API key (optional, but recommended)
+- A Telegram Bot (created via [@BotFather](https://t.me/BotFather))
 
 ---
 
-## 🛠️ Installazione
+## 🛠️ Installation
 
-1. **Clona il progetto**
+1. **Clone the project**
 
 ```bash
 git clone https://github.com/ldcostanzo/Bot-Telegram-AI.git
 cd Bot-Telegram-AI
+```
+2. **Create a virtual environment in VS Code**
+```bash
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+
+```
+
+3.**Install dependencies**
+```bash
+pip install -r requirements.txt
+
+```
+4.**Rename the .env_example file to .env**
+```bash
+BOT_TOKEN=your_telegram_bot_token
+GROQ_API_KEY=your_groq_api_key
+TAVILY_API_KEY=your_tavily_api_key  # optional, if using TavilySearchResults
+
+```
+5. **Run the bot**
+```bash
+python main.py
+
+```
